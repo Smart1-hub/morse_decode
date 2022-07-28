@@ -50,30 +50,21 @@ end
 # and return the string representation.
 # Every character in a word will be separated by a single space.
 
-def decode_word(word)
-  result = ''
-  word.split.each do |morse_char|
-    decoded_char = decode_char(morse_char)
-    result += decoded_char.to_s
-  end
-  result
+def decode_word(text)
+  array = text.split
+  word_array = []
+  array.each { |letter| word_array.push(decode_char(letter)) }
+  word_array.join
 end
 
 # Create a method to decode the entire message in Morse code, takes a string parameter,
 # and return the string representation. Every word will be separated by 3 spaces
 
-def split_phrase(phrase)
-  phrase.split
-end
-
-def decode(phrase)
-  words = split_phrase(phrase)
-  phrase_decode = ''
-  words.each do |word|
-    word_decode = decode_word(word)
-    phrase_decode += "#{word_decode} "
-  end
-  phrase_decode.strip
+def decode_sentence(sentence)
+  myarray = sentence.split('   ')
+  sentarray = []
+  myarray.each { |word| sentarray.push(decode_word(word)) }
+  sentarray.join(' ')
 end
 
 # Tests
