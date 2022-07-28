@@ -63,7 +63,7 @@ end
 # and return the string representation. Every word will be separated by 3 spaces
 
 def split_phrase(phrase)
-  phrase.split()
+  phrase.split
 end
 
 def decode(phrase)
