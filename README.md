@@ -11,7 +11,6 @@ Using Ruby language to decode a Morse code
 
 [Rubocop](https://www.rubocop.org/) is a Ruby static code analyzer (a.k.a. linter) and code formatter. It will enforce many of the guidelines outlined in the community [Ruby Style Guide](https://rubystyle.guide/).
 
-
 ## Set-up linters in your local env
 
 ### [RuboCop](https://docs.rubocop.org/en/stable/)
