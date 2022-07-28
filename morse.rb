@@ -1,4 +1,4 @@
-MORSE_CODE = {
+morse_code = {
   '.-' => 'a',
   '-...' => 'b',
   '-.-.' => 'c',
@@ -41,7 +41,7 @@ MORSE_CODE = {
 # Create a method to decode a Morse code character, takes a string parameter, and return the corresponding character in uppercase.
 
 def decode_char(char)
-  MORSE_CODE[char].capitalize
+  morse_code[char].capitalize
 end
 
 # Create a method to decode an entire word in Morse code, takes a string parameter, 
