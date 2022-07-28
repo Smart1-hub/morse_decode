@@ -38,9 +38,9 @@ MORSE_CODE = {
   '-----' => '0'
 }.freeze
 
-#Create a method to decode a Morse code character,
+# Create a method to decode a Morse code character,
 # takes a string parameter, and return the corresponding
-#character in uppercase.
+# character in uppercase.
 
 def decode_char(char)
   MORSE_CODE[char].capitalize
@@ -63,7 +63,7 @@ end
 # and return the string representation. Every word will be separated by 3 spaces
 
 def split_phrase(phrase)
-    phrase.split(' ')
+  phrase.split(' ')
 end
 
 def decode(phrase)
