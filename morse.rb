@@ -1,4 +1,4 @@
-morse_code = {
+MORSE_CODE = {
   '.-' => 'a',
   '-...' => 'b',
   '-.-.' => 'c',
@@ -38,14 +38,16 @@ morse_code = {
   '-----' => '0'
 }.freeze
 
-# Create a method to decode a Morse code character, takes a string parameter, and return the corresponding character in uppercase.
+#Create a method to decode a Morse code character,
+# takes a string parameter, and return the corresponding
+#character in uppercase.
 
 def decode_char(char)
-  morse_code[char].capitalize
+  MORSE_CODE[char].capitalize
 end
 
-# Create a method to decode an entire word in Morse code, takes a string parameter, 
-# and return the string representation. 
+# Create a method to decode an entire word in Morse code, takes a string parameter,
+# and return the string representation.
 # Every character in a word will be separated by a single space.
 
 def decode_word(word)
@@ -61,7 +63,7 @@ end
 # and return the string representation. Every word will be separated by 3 spaces
 
 def split_phrase(phrase)
-    phrase.split('   ')
+    phrase.split(' ')
 end
 
 def decode(phrase)
